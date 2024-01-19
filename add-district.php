@@ -40,7 +40,7 @@
         </select>
     </div>
     </div>
-    <div><input type="submit" value="confirm"></div>
+    <div><input type="submit" value="Save"></div>
     <div><a href="district.php">Back</a></div>
     <span><?php echo $err; ?></span>
     </form>

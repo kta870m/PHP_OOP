@@ -1,3 +1,12 @@
+<?php
+    require_once("database.php");
+    require_once("class.php");
+    $conn=get_connection();
+    $getAllProvices=new Provices($conn);
+    $rows=$getAllProvices->getAllProvices();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +32,7 @@
     
     </form>
 
-    <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
-    <h2>Add provice</h2>
-            <div class="row">
-                <div>Name: </div>
-                <div><input type="text" name="Pname" id="Pname"></div>
-            </div>
-            <p><div class="fsubmit"><input type="submit" value="Add"></div></p>
-        </form>
+        <a href="add-provices.php">Add</a>
     <a href="provicesform.php">Log Out</a>
 </body>
 </html>

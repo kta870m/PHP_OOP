@@ -30,7 +30,6 @@
                     <td><?php echo $row['id']?></td>
                     <td><?php echo $row['name']?></td>
                     <td><?php echo $row['provices_id']?></td>
-                    <td><a href="edit-district.php?id=<?php echo $row['id']; ?>?provices_id=<?php echo $row['provices_id']?>">Edit</a></td>
                     <td><a href="delete-district.php?id=<?php echo $row['id']; ?>">Delete</a></td>
                 </tr>
             <?php } ?>
